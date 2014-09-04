@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_container"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+	<!--  ListView最左边的缩略图 -->
+	<LinearLayout
+	    android:id="@+id/thumbnail"
+	    android:layout_width="wrap_content"
+	    android:layout_height="80dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_centerVertical="true"
+	    android:layout_marginRight="5dp"
+	    android:padding="3dp" >
+        
+		<ImageView
+		    android:id="@+id/list_image"
+		    android:layout_width="50dp"
+		    android:layout_height="50dp"
+		    android:src="@drawable/defaultappicon" />
+        
+	</LinearLayout>
+    
+	<!-- 应用名-->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/thumbnail"
+        android:layout_toRightOf="@id/thumbnail"
+        android:text="AppName"
+        android:textColor="#040404"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+	<!-- 应用介绍 -->
+    <TextView
+        android:id="@+id/specification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/thumbnail"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="App Spec"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+	<!-- 版本 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/specification"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/thumbnail" >
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/experience_star_gold" />
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/experience_star_gold" />
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/experience_star_gold" />
+
+        <ImageView
+            android:id="@+id/star4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/experience_star_gold" />
+
+        <ImageView
+            android:id="@+id/star5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/experience_star_grey" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/name"
+        android:layout_marginRight="5dp"
+        android:gravity="right"
+        android:text="Version"
+        android:textColor="#10bcc9"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+      
+     <!-- 下载按钮 -->    
+     <Button
+         android:id="@+id/install_button"
+         android:layout_width="70dp"
+         android:layout_height="35dp"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/version"
+         android:layout_marginLeft="3dp"
+         android:layout_marginTop="3dp"
+         android:background="@drawable/button_install_selector"
+         android:focusable="false"
+         android:text="安装"
+         android:textSize="15sp" />
+
+</RelativeLayout>

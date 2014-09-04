@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IPv6精灵</string>
+    <string name="action_settings">Settings</string>
+    <string name="package_name">com.application.ipv6genius</string>
+    
+    <string name="hostIPv6">IPv6地址: </string>
+    <string name="hostIPv4">\nIPv4地址: </string>
+    <string name="DNS">\nDNS地址: </string>
+    
+    <string name="emptyaddr">无</string>
+    <string name="nullstr"> </string>
+    
+    <string name="yes_prompt">恭喜！您已成功接入IPv6网络\n欢迎访问IPv6体验区</string>
+    <string name="disconnected_prompt">您尚未连接到互联网，\n请检查您的网络连接。</string>
+    <string name="unable_reason">无法建立隧道的原因有：\n</string>
+    <string name="unable_reason1">您还没有联网，无法获得IPv4地址。</string>
+    <string name="unable_reason2">您的IPv4地址为私有地址。</string>
+    <string name="unable_reason3">需要root权限。</string>
+    <string name="unable_reason4">本机内核不具备SIT模块。</string>
+    
+    <string name="diagnosis_hint">请输入域名或IPv6地址...</string>
+    <string name="diagnosing">正在诊断，请稍候...</string>
+    <string name="diagnosing_error">无返回结果，其原因可能是：\n1、未接入IPv6；\n2、无法解析您输入的域名或地址。</string>
+    
+    <string name="server_unconnectable">无法连接到服务器，\n请检查您的网络连接。</string>
+	<string name="default_prompt">无数据</string>
+	<string name="loading_data">载入中...</string>
+	
+</resources>
