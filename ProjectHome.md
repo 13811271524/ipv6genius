@@ -1,0 +1,1 @@
+The Android app detects whether the IPv4 mobile host meets the condition for establishing ISATAP tunnels (e.g. is rooted, is in the same IPv4 domain with the ISATAP server, etc.), and then establishes the tunnel after receives user command, when possible.
